@@ -1,0 +1,33 @@
+:root {
+  --dark: #1e2020;
+  --rust: #ce422b;
+  --notwhite: #f6eae0;
+}
+
+body {
+  font-family: "Open Sans", Arial, monospace;
+  text-align: center;
+  font-size: clamp( 1rem, 1.5vw, 1.5rem);
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  background: var(--rust);
+  color: var(--notwhite);
+}
+
+.lgcenter {
+  color: var(--rust);
+  background: var(--dark);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--notwhite);
+}
