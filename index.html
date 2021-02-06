@@ -20,10 +20,9 @@
 
 Eventually create a forum? Email complaints?? -->
 
-<body>
-
 <!-- Main content holding a couple cards which will contain server updates, currently enabled mods and general information such as "when's next wipe?" -->
-  
+
+<body>
   <main>
   <header>
     <a href="https://rust.facepunch.com/" target="_blank"><img src="assets/rust-logo.svg" alt="the Rust game logo" class="smaller"></a>
@@ -46,9 +45,9 @@ Eventually create a forum? Email complaints?? -->
         <h3>Mods Enabled</h3>
         <p>We provide a host of quality of life plugins for our players, including:</p>
         <ul>
-          <li><a href="">Z-Levels</a></li>
-          <li><a href="">Bounties</a></li>
-          <li><a href="">Backpacks</a></li>
+          <li><a href="https://umod.org/plugins/zlevels-remastered?currency=EUR" target="_blank">Z-Levels</a></li>
+          <li><a href="https://umod.org/plugins/bounty" target="_blank">Bounties</a></li>
+          <li><a href="https://umod.org/plugins/backpacks" target="_blank">Backpacks</a></li>
         </ul>
       </article>
     </section>
@@ -60,7 +59,7 @@ Eventually create a forum? Email complaints?? -->
         <ul>
           <li><a href="https://discord.gg/QEdRwCrt45" target="_blank">Discord</a></li>
           <li><a href="" target="_blank">Donations</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="" id="open">Contact</a></li>
         </ul>
       </nav>
     </aside>
@@ -85,5 +84,18 @@ Eventually create a forum? Email complaints?? -->
   </form>
 
   </main>
+
+  <!-- Currently Defunct JavaScript, seems to only cause the form to flicker on and off screen briefly, not sure how to get it to stay.
+
+  <script>
+    document.getElementById("open").onclick = function() {display()};
+    
+    function display() {
+      document.getElementById("fs-frm").classList.toggle("show");
+    }
+  </script>
+
+-->
+
 </body>
 </html>

@@ -1,3 +1,10 @@
+/* All the beautiful styles for this page!
+  TO DO:
+  - Create hamburger menu with checkbox hack
+  - Use checkbox hack again to toggle contact form visibility
+  - Link to Doc's donations site of choice. 
+  */
+
 :root {
   --dark: #1e2020;
   --rust: #ce422b;
@@ -12,6 +19,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Simple styles for the page header, keep the aspect ratios of the images and allow flexibility */
 
 header {
   display: flex;
@@ -30,6 +39,8 @@ header img {
   margin-top: .5rem;
 }
 
+/* Grid Template Areas */
+
 .wide {
   grid-area: main;
 }
@@ -41,6 +52,8 @@ header img {
 .full {
   grid-area: footer;
 }
+
+/* The container for all the things! */
 
 main {
   height: 100vh;
@@ -54,16 +67,22 @@ main {
     "footer footer";
 }
 
+/* Container for the cards */
+
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+/* The simple, yet descriptive headline */
+
 .lgcenter {
   width: 100%;
   align-self: center;
 }
+
+/* General layout for cards on the page */
 
 .card {
   max-width: 40ch;
@@ -74,6 +93,8 @@ section {
   background: var(--notwhite);
 }
 
+/* Main call to action button, get them players into the discord! */
+
 .action {
   background: var(--rust);
   color: var(--notwhite);
@@ -82,6 +103,8 @@ section {
   padding: 1rem;
   margin-top:  2rem;
 }
+
+/* A right-aligned nav menu! I might put it into a Hamburger menu later on */
 
 aside {
   display: flex;
@@ -111,9 +134,13 @@ nav ul li a:hover, nav ul li a:active, .action:hover, .action:active {
   background: #b4250f;
 }
 
+/* just a footer */
+
 footer {
   background: var(--dark);
 }
+
+/* The Hidden Form! styled and ready to be linked up, just not sure how to. considering bypassing the JavaScript and using a checkbox hack here, as well as for the hamburger menu. */
 
 .contact {
   display: flex;
@@ -121,11 +148,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  z-index: -1;
 
   position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: -1;
+
   background: hsla(44, 1%, 15%, 85%);
 
   color: var(--notwhite);
@@ -164,3 +192,11 @@ textarea {
   margin-top: 1rem;
   width: 25%;
 }
+
+/* Inactive Form style toggle
+
+.show {
+  opacity: 1;
+  z-index: 1;
+}
+*/
