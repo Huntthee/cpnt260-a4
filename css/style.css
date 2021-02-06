@@ -1,0 +1,75 @@
+:root {
+  --dark: #1e2020;
+  --rust: #ce422b;
+  --notwhite: #f6eae0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  
+  background: url(../assets/rust-truck-full-edit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background: var(--dark);
+}
+
+header img {
+  max-width: 80%;
+  height: auto;
+}
+
+.wide {
+  grid-area: main;
+}
+
+.thin {
+  grid-area: sidebar;
+}
+
+.full {
+  grid-area: footer;
+}
+
+main {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 3fr .5fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "main sidebar"
+    "footer footer";
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.lgcenter {
+  width: 100%;
+}
+
+.card {
+  max-width: 40ch;
+  margin-bottom: 1rem;
+
+  background: var(--notwhite);
+  
+}
+
+aside {
+  background: var(--rust);
+  height: 100%;
+}
+
+footer {
+  background: var(--dark);
+}
