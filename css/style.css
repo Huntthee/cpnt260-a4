@@ -25,8 +25,9 @@ header img {
 }
 
 .smaller {
-  width: 10%;
+  width: 100%;
   height: auto;
+  margin-top: .5rem;
 }
 
 .wide {
@@ -61,6 +62,7 @@ section {
 
 .lgcenter {
   width: 100%;
+  align-self: center;
 }
 
 .card {
@@ -70,6 +72,15 @@ section {
   box-shadow: 8px 10px 5px var(--dark);
 
   background: var(--notwhite);
+}
+
+.action {
+  background: var(--rust);
+  color: var(--notwhite);
+
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-top:  2rem;
 }
 
 aside {
@@ -96,10 +107,60 @@ nav ul li a {
   padding: 1rem;
 }
 
-nav ul li a:hover, nav ul li a:active {
+nav ul li a:hover, nav ul li a:active, .action:hover, .action:active {
   background: #b4250f;
 }
 
 footer {
   background: var(--dark);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background: hsla(44, 1%, 15%, 85%);
+
+  color: var(--notwhite);
+  opacity: 0;
+}
+
+.contact fieldset {
+  background: var(--dark);
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+input {
+  width: 100%;
+  background: var(--rust);
+  border: none;
+  color: var(--notwhite);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+textarea {
+  width: 40ch;
+  max-width: 60ch;
+}
+
+.submit {
+  background: var(--rust);
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 25%;
 }

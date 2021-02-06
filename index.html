@@ -26,8 +26,9 @@ Eventually create a forum? Email complaints?? -->
   
   <main>
   <header>
+    <a href="https://rust.facepunch.com/" target="_blank"><img src="assets/rust-logo.svg" alt="the Rust game logo" class="smaller"></a>
     <img src="assets/docslogo.svg" alt="Site logo that says Doc's Wonderland">
-    <img src="assets/rust-logo.svg" alt="the Rust game logo" class="smaller">
+    
   </header>
     <!-- Section for the aformentioned content cards-->
 
@@ -37,8 +38,8 @@ Eventually create a forum? Email complaints?? -->
       <article class="card">
         <h3>Server News</h3>
         <p><strong>Just Moved!</strong> and now in amongst the modded servers, our first wipe brings a few new things.</p>
-        <p>While still aiming to be New Player Friendly, we have not implemented any PvP restrictions. Server-wide decay times have been reduced, and the map size increased.<br><br><strong>Happy Hunting!</strong></p>
-        <a href="#" target="_blank" class="action"></a>
+        <p>While still aiming to be New Player Friendly, we have not implemented any PvP restrictions. Server-wide decay times have been reduced, and the map size increased.</p>
+        <a href="https://discord.gg/QEdRwCrt45" target="_blank" class="action">Join the Discord!</a>
       </article>
 
       <article class="card">
@@ -57,8 +58,8 @@ Eventually create a forum? Email complaints?? -->
     <aside class="thin">
       <nav>
         <ul>
-          <li><a href="">Discord</a></li>
-          <li><a href="">Donations</a></li>
+          <li><a href="https://discord.gg/QEdRwCrt45" target="_blank">Discord</a></li>
+          <li><a href="" target="_blank">Donations</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
@@ -67,6 +68,21 @@ Eventually create a forum? Email complaints?? -->
   <footer class="full">
   <p>&copy; Mike Allison 2021 - For 'Doc Holliday'</p>
   </footer>
+
+  <!-- Hidden Contact form, need to make it show up when link is clicked. likely to use some JavaScript -->
+
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post" class="contact">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+      <label for="email-address">Email Address</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+      <label for="message">Message</label>
+      <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <input type="submit" value="Submit" class="submit">
+  </form>
 
   </main>
 </body>
