@@ -14,10 +14,8 @@
 body {
   display: flex;
   flex-direction: column;
-  
-  background: url(../assets/rust-truck-full-edit.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  background: gray;
 }
 
 /* Simple styles for the page header, keep the aspect ratios of the images and allow flexibility */
@@ -101,7 +99,6 @@ section {
 
   border-radius: .5rem;
   padding: 1rem;
-  margin-top:  2rem;
 }
 
 /* A right-aligned nav menu! I might put it into a Hamburger menu later on */
@@ -191,6 +188,15 @@ textarea {
   padding: 1rem;
   margin-top: 1rem;
   width: 25%;
+}
+
+/* Large background image for tablets/desktop */
+
+@media screen and (min-width: 50rem) {
+  body {
+  background: url(../assets/rust-truck-full-edit.jpg);
+  background-size: cover;
+  }
 }
 
 /* Inactive Form style toggle
