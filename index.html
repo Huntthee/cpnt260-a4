@@ -87,17 +87,13 @@ Eventually create a forum? Email complaints?? -->
 
   </main>
 
-  <!-- Currently Defunct JavaScript, seems to only cause the form to flicker on and off screen briefly, not sure how to get it to stay.
-
   <script>
-    document.getElementById("open").onclick = function() {display()};
-    
-    function display() {
-      document.getElementById("fs-frm").classList.toggle("show");
-    }
-  </script>
+    const contact = document.querySelector('.contact');
 
--->
+    document.getElementById('open').addEventListener('click', function(){
+      contact.classList.toggle('show');
+    });
+  </script>
 
 </body>
 </html>
