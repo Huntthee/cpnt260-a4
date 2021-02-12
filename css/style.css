@@ -131,6 +131,15 @@ nav ul li a:hover, nav ul li a:active, .action:hover, .action:active {
   background: #b4250f;
 }
 
+/* Styles for the icons! */
+
+.fab, .fas {
+  float: left;
+  margin-left: 1rem;
+}
+
+/* Styles for the opening contact button */
+
 #open {
   display: block;
   color: var(--notwhite);
@@ -140,6 +149,24 @@ nav ul li a:hover, nav ul li a:active, .action:hover, .action:active {
 
 #open:hover, #open:active {
   background: #b4250f;
+}
+
+/* Styles for the 'x' icon */
+
+#close {
+  display: block;
+  color: var(--notwhite);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#close:hover, #close:active {
+  background: #b4250f;
+}
+
+.fa-times {
+  position: relative;
+  left: 10.1rem;
 }
 
 /* just a footer */
@@ -204,6 +231,11 @@ textarea {
 .show {
   opacity: 1;
   z-index: 2;
+}
+
+.hide {
+  opacity: 0;
+  z-index: -1;
 }
 
 

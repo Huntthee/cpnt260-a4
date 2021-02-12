@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Paytone+One&display=swap" rel="stylesheet">
   <title>Doc's Wonderland</title>
 </head>
@@ -57,9 +58,9 @@ Eventually create a forum? Email complaints?? -->
     <aside class="thin">
       <nav>
         <ul>
-          <li><a href="https://discord.gg/QEdRwCrt45" target="_blank">Discord</a></li>
-          <li><a href="">Donations</a></li>
-          <li><span id="open">Contact</span></li>
+          <li><a href="https://discord.gg/QEdRwCrt45" target="_blank"><i class="fab fa-discord"></i>Discord</a></li>
+          <li><a href="https://www.paypal.me/DocH0lliday" target="_blank"><i class="fas fa-hand-holding-usd" ></i>Donations</a></li>
+          <li><span id="open"><i class="fas fa-envelope"></i>Contact</span></li>
         </ul>
       </nav>
     </aside>
@@ -72,7 +73,8 @@ Eventually create a forum? Email complaints?? -->
   
   HTML Validator noted that the curly braces in the url of the action attribute are 'illegal' Otherwise markup is good.-->
 
-  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post" class="contact">
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyybagpb" method="post" class="contact">
+    <i class="fas fa-times" id="close"></i>
     <fieldset id="fs-frm-inputs">
       <label for="full-name">Full Name</label>
       <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
@@ -92,6 +94,10 @@ Eventually create a forum? Email complaints?? -->
 
     document.getElementById('open').addEventListener('click', function(){
       contact.classList.toggle('show');
+    });
+
+    document.getElementById('close').addEventListener('click', function(){
+      location.reload();
     });
   </script>
 
