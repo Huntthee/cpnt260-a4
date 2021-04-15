@@ -1,11 +1,10 @@
-# Assignment 4 for CPNT260 SAIT WBDV 2021
+# Doc's Wonderland Rust Server
 ## This website has been and will continue to be developed for my longtime friend Mason Kaye aka 'Doc Holliday' and his Rust server, so long as it stands.
+>**04/14/21** This server is no longer hosted
 
 I met Doc on Rust about 5 years ago and we've remained friends since. Now we run our own server and I have used the opportunity of this assignment to create a website for the players who visit our server. 
 
 The website will contain server news for updates and upcoming changes, a section for frequently asked questions, maybe even some simple starter guides for the new players. 
-
-At the moment the contact form does not function as expected and requires some work, and the code is brute force for now as I generate the layout.
 
 ---
 
